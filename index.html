@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 8 Months, My Love! 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hearts-background"></div>
+        
+        <!-- Main Screen -->
+        <div class="content main-screen">
+            <h1 class="title">Happy 8 Months, My Love! 💖</h1>
+            <p class="subtitle">A special puzzle journey made just for you...</p>
+            <button class="start-btn" onclick="startJourney()">Begin Our Love Story 💕</button>
+        </div>
+
+        <!-- Level 1 - Question -->
+        <div id="level1" class="level">
+            <h2>Level 1: Our First Question 💌</h2>
+            <div class="question">What grows stronger every day we're together?</div>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this, false)">Our patience</div>
+                <div class="option" onclick="checkAnswer(this, false)">Our collection of memories</div>
+                <div class="option" onclick="checkAnswer(this, true)">Our love</div>
+                <div class="option" onclick="checkAnswer(this, false)">Our understanding</div>
+            </div>
+        </div>
+
+        <!-- Level 2 - Image Puzzle -->
+        <div id="level2" class="level">
+            <h2>Level 2: Memory Puzzle 🧩</h2>
+            <p>Arrange our special memories in the correct chronological order:</p>
+            <div class="puzzle-container">
+                <div class="puzzle-piece" data-order="1">
+                    <img src="images/memory1.jpg" alt="Our Memory 1" draggable="false">
+                    <div class="piece-number">1</div>
+                </div>
+                <div class="puzzle-piece" data-order="2">
+                    <img src="images/memory2.jpg" alt="Our Memory 2" draggable="false">
+                    <div class="piece-number">2</div>
+                </div>
+                <div class="puzzle-piece" data-order="3">
+                    <img src="images/memory3.jpg" alt="Our Memory 3" draggable="false">
+                    <div class="piece-number">3</div>
+                </div>
+                <div class="puzzle-piece" data-order="4">
+                    <img src="images/memory4.jpg" alt="Our Memory 4" draggable="false">
+                    <div class="piece-number">4</div>
+                </div>
+            </div>
+            <button class="btn" onclick="checkPuzzle()">Check Order 💖</button>
+        </div>
+
+        <!-- Level 3 - Word Guess -->
+        <div id="level3" class="level">
+            <h2>Level 3: Word of Love 💕</h2>
+            <p>Guess the word that describes us best:</p>
+            <div class="hint-box">
+                <p id="hintText">It's how I feel about you</p>
+            </div>
+            <input type="text" id="guessInput" class="guess-input" placeholder="Enter your guess...">
+            <div>
+                <button class="btn hint-btn" onclick="showHint()">Get Hint 💡</button>
+                <button class="btn" onclick="checkGuess()">Submit Guess 💖</button>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <div id="gallery" class="level">
+            <h2>Our Beautiful Memories Gallery 🎨</h2>
+            <p>Scroll through our special moments together...</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Special Moment 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Special Moment 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Special Moment 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Special Moment 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpg" alt="Special Moment 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpg" alt="Special Moment 6">
+                </div>
+            </div>
+            <div class="message">
+                <h3>Happy 8 Month Anniversary, My Love! 💖</h3>
+                <p>Every moment with you is precious. I cherish our journey together and look forward to many more months and years together. I love you with all my heart!</p>
+            </div>
+            <button class="btn" onclick="location.reload()">Play Again 💕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
